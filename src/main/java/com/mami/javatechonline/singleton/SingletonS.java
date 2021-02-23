@@ -1,8 +1,6 @@
 package com.mami.javatechonline.singleton;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
-import java.io.*;
+import java.io.Serializable;
 
 // When we serialize an object and deserialize it again  there are different hashcode
 
@@ -25,7 +23,6 @@ public class SingletonS implements Serializable {
         System.out.println("Applying readResolve() ... ");
         return SingletonS.getInstance();
     }
-
 
 
 }
