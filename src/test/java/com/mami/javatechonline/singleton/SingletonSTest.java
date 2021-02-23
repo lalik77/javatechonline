@@ -23,7 +23,7 @@ public class SingletonSTest {
 
 
     @Test
-    public void whenCreateInstance_thenSerializeAndDeserializeItWeHaveTheSameObject() throws IOException, ClassNotFoundException {
+    public void whenCreateInstance_thenSerializeAndDeserializeItTheyHaveTheSameHashCode() throws IOException, ClassNotFoundException {
 
         SingletonS singletonS = SingletonS.getInstance();
 
