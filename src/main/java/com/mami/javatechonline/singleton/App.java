@@ -64,7 +64,12 @@ public class App {
 
        // singletonCloneViolation();
       //  singletonReflectionViolation();
-      singletonSerializationViolation();
+      //singletonSerializationViolation();
+
+        EnumSingleton enumSingleton = EnumSingleton.SINGLETON_INSTANCE;
+
+        System.out.println(enumSingleton.hashCode());
+        System.out.println(enumSingleton);
     }
 
 
